@@ -1,16 +1,76 @@
+/* ----  Variables  ----  */
+// Text colors
+$txt-heading: #fff;
+$txt-base: #AEB0B8;
+
+// Active colors
+$btn-bg: #304CFD;
+$accent: #0D86FF;
+
+
+// Background colors
+$bg: #1D1E24;
+$bg-main: #23262B;
+$bg-accent: #2E2F36;
+/* ----  Variables END  ----  */
+
+
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $txt-base;
 }
-
+body{
+    background: $bg;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.bar{
+    background: $bg-main;
+    border-radius: 10px;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5{
+    color: $txt-heading;
+}
+p{
+    font-size: 16px;
+    line-height: 26px;
+}
+h5{
+    font-size: 20px;
+    line-height: 30px;
+}
+h4{
+    font-size: 24px;
+    line-height: 34px;
+}
+button{
+    width: max-content;
+    display: block;
+    padding: 10px 20px;
+    background: $btn-bg;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    &:hover{
+        background: $accent;
+    }
+}
 .page{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, auto);
     max-width: 1140px;
     margin: 0 auto;
     grid-gap: 30px;
     &-header{
-        grid-column: 1/ span 6;
-        background: #e4e4e4;
+        grid-column: 1/ span 8;
+        grid-row: 1 / span 1;
         height: 80px;
         padding: 20px;
         display: flex;
@@ -22,15 +82,90 @@
     width: 100px;
 }
 .sidebar{
-    background: #e4e4e4;
     grid-column: 1 /span 2;
+    padding: 20px 30px;
+    grid-row: 2/ span 1;
 }
 .content{
-    background: #e4e4e4;
-    grid-column: 3 / span 4;
+    grid-column: 3 / span 6;
+    grid-row: 2/ span 2;
     &-wallpaper{
         background: url('../assets/bg.jpg') no-repeat center/cover;
         height: 150px;
         margin-bottom: 20px;
+    }
+    &-info{
+        padding: 0 20px;
+        display: flex;
+    }
+    &-form{
+        padding: 20px;
+        textarea{
+            width: 100%;
+            display: block;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background: $bg-accent;
+            border: none;
+            outline: none;
+            resize: none;
+        }
+        button{
+            width: max-content;
+            margin-left: auto;
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    }
+}
+.avatar{
+    min-width: 100px;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.description{
+    width: 100%;
+    h4{
+        margin-bottom: 20px;
+    }
+}
+nav{
+    ul{
+        padding-inline-start: 0;
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+        }
+
+    }
+    a{
+        color: $txt-heading;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+        &:hover{
+            color: $accent;
+            transition: 0.2s;
+        }
+    }
+    button{
+        display: block;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 10px;
+        background: $btn-bg;
+        color: white;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: 0.3s;
+        &:hover{
+            background: $accent;
+            transition: 0.3s;
+        }
     }
 }
