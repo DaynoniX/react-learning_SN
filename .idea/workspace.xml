@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b1c34e-c65c-4bfa-904d-5109123f0880" name="Default Changelist" comment="Design update">
-      <change afterPath="$PROJECT_DIR$/src/global_components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/global_components/Sidebar/Sidebar.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uni_components/Buttons/default-btn/BtnDefault.jsx" afterDir="false" />
+    <list default="true" id="48b1c34e-c65c-4bfa-904d-5109123f0880" name="Default Changelist" comment="Implementing CSS-modules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uni_components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/global_components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uni_components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uni_components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/global_components/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uni_components/Buttons/default-btn/BtnDefault.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/uni_components/Buttons/Default/BtnDefault.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +63,8 @@
       <workItem from="1622377831842" duration="5011000" />
       <workItem from="1625655467243" duration="3490000" />
       <workItem from="1625660049728" duration="2772000" />
-      <workItem from="1625667894664" duration="5403000" />
+      <workItem from="1625667894664" duration="6455000" />
+      <workItem from="1625758519997" duration="864000" />
     </task>
     <task id="LOCAL-00001" summary="Creating app">
       <created>1622377902051</created>
@@ -96,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625664169133</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementing CSS-modules">
+      <created>1625751144073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625751144073</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +116,7 @@
     <MESSAGE value="Creating app" />
     <MESSAGE value="Beginning of template creation" />
     <MESSAGE value="Design update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design update" />
+    <MESSAGE value="Implementing CSS-modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing CSS-modules" />
   </component>
 </project>
