@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from "../assets/logo.png";
-import Header from "./Header";
-
+import style from './Sidebar.module.scss'
 const Navbar = () => {
     return (
-        <div className="sidebar bar">
-            <nav>
+        <div className={`${style.sidebar} ${'bar'}`}>
+            <nav className={style.nav}>
                 <ul>
                     <li>
                         <a href="#">
@@ -28,7 +26,7 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
-                <button>Settings</button>
+                <button className="btnDefault">Settings</button>
             </nav>
         </div>
     );

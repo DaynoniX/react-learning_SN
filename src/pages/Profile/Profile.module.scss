@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.container{
+  grid-column: 3 / span 6;
+  grid-row: 2/ span 2;
+}
+.info{
+  padding: 0 20px;
+  display: flex;
+}
+.wallpaper{
+  background: url('../../assets/bg.jpg') no-repeat center/cover;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.newPost{
+  padding: 20px;
+}
+textarea{
+  width: 100%;
+  display: block;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  background: $bg-accent;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  color: $txt-heading;
+}
+.btnDefault{
+  width: max-content;
+  margin-left: auto;
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.description{
+  width: 100%;
+}
+.avatar{
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+h4{
+  margin-bottom: 20px;
+}
+h5{
+  margin-bottom: 20px;
+}
+p{
+  font-size: 14px;
+}

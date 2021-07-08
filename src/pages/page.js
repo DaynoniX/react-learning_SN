@@ -1,9 +1,8 @@
 import React from 'react';
-import logo from '../assets/logo.png'
-import './page.scss';
-import Header from '../uni_components/Header';
-import Sidebar from "../uni_components/Sidebar";
-import Profile from "../uni_components/Profile";
+import '../styles/global.scss';
+import Header from '../global_components/Header/Header';
+import Sidebar from "../global_components/Sidebar/Sidebar";
+import Profile from "./Profile/Profile";
 
 class Page extends React.Component {
     render() {

@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b1c34e-c65c-4bfa-904d-5109123f0880" name="Default Changelist" comment="Beginning of template creation">
-      <change afterPath="$PROJECT_DIR$/public/avtar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uni_components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uni_components/Profile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uni_components/Sidebar.jsx" afterDir="false" />
+    <list default="true" id="48b1c34e-c65c-4bfa-904d-5109123f0880" name="Default Changelist" comment="Design update">
+      <change afterPath="$PROJECT_DIR$/src/global_components/Header/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/global_components/Sidebar/Sidebar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uni_components/Buttons/default-btn/BtnDefault.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uni_components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/global_components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uni_components/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uni_components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/global_components/Sidebar/Sidebar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +54,11 @@
       <recent name="$PROJECT_DIR$/src/uni_components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/styles" />
+      <recent name="$PROJECT_DIR$/src/pages/Profile" />
+      <recent name="$PROJECT_DIR$/src/global_components/Sidebar" />
+      <recent name="$PROJECT_DIR$/src/global_components/Header" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -64,7 +72,8 @@
       <workItem from="1622377446151" duration="18000" />
       <workItem from="1622377831842" duration="5011000" />
       <workItem from="1625655467243" duration="3490000" />
-      <workItem from="1625660049728" duration="2505000" />
+      <workItem from="1625660049728" duration="2772000" />
+      <workItem from="1625667894664" duration="5403000" />
     </task>
     <task id="LOCAL-00001" summary="Creating app">
       <created>1622377902051</created>
@@ -80,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622390420486</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Design update">
+      <created>1625664169133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625664169133</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,17 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating app" />
     <MESSAGE value="Beginning of template creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beginning of template creation" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/uni_components/Profile.jsx</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Design update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Design update" />
   </component>
 </project>

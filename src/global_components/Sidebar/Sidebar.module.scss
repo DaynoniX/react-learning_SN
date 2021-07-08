@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.sidebar{
+  grid-column: 1 /span 2;
+  padding: 20px 30px;
+  grid-row: 2/ span 1;
+}
+.nav{
+  ul{
+    padding-inline-start: 0;
+    list-style: none;
+    li{
+      margin-bottom: 10px;
+    }
+
+  }
+  a{
+    color: $txt-heading;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    &:hover{
+      color: $accent;
+      transition: 0.2s;
+    }
+  }
+  button{
+    margin-top: 50px;
+  }
+}
