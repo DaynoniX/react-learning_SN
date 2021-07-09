@@ -1,4 +1,6 @@
 import React from 'react';
+import Post from "./Posts/Post";
+import Button from "../../UI/Button";
 import styles from './Profile.module.scss';
 import '../../../styles/global.scss';
 
@@ -26,11 +28,13 @@ const Profile = () => {
                 <h5>My posts</h5>
                 <form action="#">
                     <textarea placeholder={'Start typing...'}></textarea>
-                    <button className={`${styles.btnDefault} ${`btnDefault`}`}>Submit</button>
+                    <Button type={styles.btnDefault} text={'Send'}/>
                 </form>
             </div>
-            <div className="posts">
-
+            <div className={styles.posts}>
+                <Post text={'its a first post'}/>
+                <Post text={'its a second post'}/>
+                <Post text={'its a third post'}/>
             </div>
         </div>
     );

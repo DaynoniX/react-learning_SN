@@ -1,11 +1,10 @@
 import React from 'react';
 import '../../styles/global.scss';
 import {Header} from '../Layout/Header';
-import Sidebar from "../Layout/Sidebar/Sidebar";
-import Profile from "./Profile/Profile";
+import Sidebar from "../Layout/Sidebar";
+import Profile from "./Profile";
 
-class Page extends React.Component {
-    render() {
+const Page = () => {
         return (
             <div className="page">
                 <Header />
@@ -13,7 +12,6 @@ class Page extends React.Component {
                 <Profile />
             </div>
         );
-    }
 }
 
 export default Page;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from "../../UI/Button";
 import style from './Sidebar.module.scss'
 const Navbar = () => {
     return (
@@ -26,7 +27,7 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
-                <button className="btnDefault">Settings</button>
+                <Button type={style.button} text={'Settings'}/>
             </nav>
         </div>
     );

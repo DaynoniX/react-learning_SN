@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48b1c34e-c65c-4bfa-904d-5109123f0880" name="Default Changelist" comment="Implementing CSS-modules">
+    <list default="true" id="48b1c34e-c65c-4bfa-904d-5109123f0880" name="Default Changelist" comment="gitignore update">
+      <change afterPath="$PROJECT_DIR$/src/components/Pages/Profile/Posts/Post/Post.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Pages/Profile/Posts/Post/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Sidebar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Sidebar/Sidebar.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Profile/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Profile/Profile.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Profile/Profile.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uni_components/Buttons/default-btn/BtnDefault.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/uni_components/Buttons/Default/BtnDefault.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +52,11 @@
       <recent name="$PROJECT_DIR$/src/uni_components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/UI/Button" />
+      <recent name="$PROJECT_DIR$/src/components/UI/index" />
       <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/pages/Profile" />
       <recent name="$PROJECT_DIR$/src/global_components/Sidebar" />
-      <recent name="$PROJECT_DIR$/src/global_components/Header" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,6 +73,9 @@
       <workItem from="1625660049728" duration="2772000" />
       <workItem from="1625667894664" duration="6455000" />
       <workItem from="1625758519997" duration="864000" />
+      <workItem from="1625767268930" duration="256000" />
+      <workItem from="1625773322832" duration="91000" />
+      <workItem from="1625821287263" duration="3403000" />
     </task>
     <task id="LOCAL-00001" summary="Creating app">
       <created>1622377902051</created>
@@ -94,7 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625751144073</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Minor refactoring">
+      <created>1625767303118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625767303118</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gitignore update">
+      <created>1625767391981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625767391981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +142,8 @@
     <MESSAGE value="Beginning of template creation" />
     <MESSAGE value="Design update" />
     <MESSAGE value="Implementing CSS-modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing CSS-modules" />
+    <MESSAGE value="Minor refactoring" />
+    <MESSAGE value="gitignore update" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore update" />
   </component>
 </project>

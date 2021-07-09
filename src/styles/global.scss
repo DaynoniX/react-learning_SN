@@ -49,24 +49,7 @@ h4{
     font-size: 24px;
     line-height: 34px;
 }
-.btnDefault{
-    width: max-content;
-    display: block;
-    padding: 10px 20px;
-    background: $btn-bg;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    transition: 0.3s;
-    cursor: pointer;
-    &:hover{
-        background: $accent;
-        transition: 0.3s;
-    }
-}
+
 .page{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
