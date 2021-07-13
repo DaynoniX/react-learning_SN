@@ -1,0 +1,18 @@
+@import "../../../../styles/variables";
+
+.info{
+  padding: 0 20px;
+  display: flex;
+}
+
+.description{
+  width: 100%;
+}
+.avatar{
+  min-width: 100px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
