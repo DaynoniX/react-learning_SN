@@ -58,6 +58,10 @@ h4{
     margin: 0 auto;
     grid-gap: 30px;
 }
+.container{
+    grid-column: 3 / span 6;
+    grid-row: 2/ span 2;
+}
 
 
 

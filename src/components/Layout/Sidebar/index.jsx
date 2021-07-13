@@ -1,30 +1,32 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 import Button from "../../UI/Button";
 import style from './Sidebar.module.scss'
+
 const Navbar = () => {
     return (
         <div className={`${style.sidebar} ${'bar'}`}>
             <nav className={style.nav}>
                 <ul>
                     <li>
-                        <a href="#">
+                        <NavLink to="/profile">
                             Profile
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <NavLink to="/dialogs">
                             Messages
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <NavLink to="/news">
                             News
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#">
+                        <NavLink to="/music">
                             Music
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
                 <Button type={style.button} text={'Settings'}/>

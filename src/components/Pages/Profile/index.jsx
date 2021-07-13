@@ -1,8 +1,8 @@
 import React from 'react';
 import Post from "./Posts/Post";
+
 import Button from "../../UI/Button";
 import styles from './Profile.module.scss';
-import '../../../styles/global.scss';
 
 const Profile = () => {
     const renderInfo = () => (
@@ -21,7 +21,7 @@ const Profile = () => {
     );
 
     return (
-        <div className={`${styles.container} ${'bar'}`}>
+        <div>
             <div className={styles.wallpaper} />
             {renderInfo()}
             <div className={styles.newPost}>
