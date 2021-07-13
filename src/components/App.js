@@ -22,7 +22,7 @@ const App = () => {
                 <div className="container bar">
                     <Route path='/profile' component={Profile}/>
                     <Route path='/dialogs' component={Dialogs}/>
-                    <Route path='/home' component={Home}/>
+                    <Route exact path='/' component={Home}/>
                     <Route path='/music' component={Music}/>
                     <Route path='/news' component={News}/>
                     <Route path='/settings' component={Settings}/>

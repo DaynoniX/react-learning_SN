@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Message from "./Message";
+import ListItem from "./ListItem";
+
 
 import styles from './Dialogs.module.scss';
 
@@ -8,12 +10,12 @@ const Dialogs = () =>{
     return(
         <div className={styles.dialogs}>
             <div className={styles.dialogsList}>
-                <div className={styles.item + ' ' + styles.active}>John</div>
-                <div className={styles.item}>Steve</div>
-                <div className={styles.item}>Bob</div>
-                <div className={styles.item}>Dan</div>
-                <div className={styles.item}>Mike</div>
-                <div className={styles.item}>Jerry</div>
+                <ListItem id='1' name='Name 1' />
+                <ListItem id='2' name='Name 2'/>
+                <ListItem id='3' name='Name 3'/>
+                <ListItem id='4' name='Name 4'/>
+                <ListItem id='5' name='Name 5'/>
+                <ListItem id='6' name='Name 6'/>
             </div>
             <div className={styles.chat}>
                 <Message text="lorem" />
