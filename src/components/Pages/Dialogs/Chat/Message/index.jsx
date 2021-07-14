@@ -3,13 +3,19 @@ import React from "react";
 import styles from './Message.module.scss';
 
 const Message = (props) =>{
-    // console.log(styles[props.from]);
+    let messageClass = '';
+    if (props.state.type > 0){
+        messageClass = styles.message + ' ' + styles.income;
+    } else {
+        messageClass = styles.message;
+    }
+
     return (
-        <div className={`${styles.message}`}>
+        <div className={messageClass}>
             <div className={styles.avatar}>
-                <img src="avtar.png" alt="avatar"/>
+                <img src={props.state.img} alt="avatar"/>
             </div>
-            <div className={styles.content}>{props.text}</div>
+            <div className={styles.content}>{props.state.text}</div>
         </div>
     )
 }

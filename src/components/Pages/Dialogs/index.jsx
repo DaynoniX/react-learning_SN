@@ -5,11 +5,11 @@ import List from "./List";
 
 import styles from './Dialogs.module.scss';
 
-const Dialogs = () =>{
+const Dialogs = (props) =>{
     return(
         <div className={styles.dialogs}>
-            <List />
-            <Chat />
+            <List state={props.state.dialogsList}/>
+            <Chat state={props.state.messages}/>
         </div>
     )
 }

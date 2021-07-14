@@ -4,14 +4,24 @@
   display: flex;
   margin-top: 10px;
   &.income{
-
-  }
-  &.outcome{
-
+    flex-direction: row-reverse;
+    .content {
+      background: $bg-accent;
+      &:before {
+        clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        left: unset;
+        right: -10px;
+        background: $bg-accent;
+      }
+    }
+    .avatar{
+      margin-right: 0;
+      margin-left: 25px;
+    }
   }
 }
 .content{
-  background: $bg-accent;
+  background: rgba($accent, 0.3);
   padding: 10px;
   position: relative;
   max-width: 70%;
@@ -25,7 +35,7 @@
     position: absolute;
     top: 12px;
     left: - 10px;
-    background: $bg-accent;
+    background: rgba($accent, 0.3);
     clip-path: polygon(100% 0, 0 50%, 100% 100%);
     transition: 0.3s;
   }

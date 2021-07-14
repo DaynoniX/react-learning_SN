@@ -13,19 +13,25 @@ import Home from "./Pages/Home";
 import '../styles/global.scss';
 
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div className="page">
                 <Header/>
                 <Sidebar/>
                 <div className="container bar">
-                    <Route path='/profile' component={Profile}/>
-                    <Route path='/dialogs' component={Dialogs}/>
-                    <Route exact path='/' component={Home}/>
-                    <Route path='/music' component={Music}/>
-                    <Route path='/news' component={News}/>
-                    <Route path='/settings' component={Settings}/>
+                    <Route path='/profile'
+                           render={() => <Profile state={props.state.profilePage}/>}/>
+                    <Route path='/dialogs'
+                           render={() => <Dialogs state={props.state.dialogsPage}/>}/>
+                    <Route exact path='/'
+                           render={() => <Home />}/>
+                    <Route path='/music'
+                           render={() => <Music /> }/>
+                    <Route path='/news'
+                           render={() => <News />}/>
+                    <Route path='/settings'
+                           render={() => <Settings />}/>
                 </div>
             </div>
         </BrowserRouter>
