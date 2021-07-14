@@ -10,7 +10,7 @@ const Post = (props) => {
             </div>
             <div className={styles.content}>
                 <div className={styles.name}>
-                    Name
+                    {props.name}
                 </div>
                 <div className={styles.text}>
                     <p>{props.text}</p>

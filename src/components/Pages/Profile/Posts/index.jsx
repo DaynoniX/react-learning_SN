@@ -3,12 +3,11 @@ import Post from "./Post";
 
 import styles from './Posts.module.scss';
 
-const Posts = () => {
+const Posts = (props) => {
+    let postsElements = props.posts.map(post => <Post text={post.text} name={post.name}/>)
     return (
         <div className={styles.posts}>
-            <Post text={'its a first post'}/>
-            <Post text={'its a second post'}/>
-            <Post text={'its a third post'}/>
+            { postsElements }
         </div>
     )
 }
