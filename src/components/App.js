@@ -21,17 +21,21 @@ const App = (props) => {
                 <Sidebar/>
                 <div className="container bar">
                     <Route path='/profile'
-                           render={() => <Profile state={props.state.profilePage}/>}/>
+                           render={() => <Profile
+                               state={props.state.profilePage}
+                               addPost={props.addPost}
+                               typeText={props.typeText}
+                           />}/>
                     <Route path='/dialogs'
                            render={() => <Dialogs state={props.state.dialogsPage}/>}/>
                     <Route exact path='/'
-                           render={() => <Home />}/>
+                           render={() => <Home/>}/>
                     <Route path='/music'
-                           render={() => <Music /> }/>
+                           render={() => <Music/>}/>
                     <Route path='/news'
-                           render={() => <News />}/>
+                           render={() => <News/>}/>
                     <Route path='/settings'
-                           render={() => <Settings />}/>
+                           render={() => <Settings/>}/>
                 </div>
             </div>
         </BrowserRouter>

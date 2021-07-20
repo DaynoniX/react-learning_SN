@@ -10,10 +10,10 @@ const Post = (props) => {
             </div>
             <div className={styles.content}>
                 <div className={styles.name}>
-                    {props.name}
+                    {props.state.name}
                 </div>
                 <div className={styles.text}>
-                    <p>{props.text}</p>
+                    <p>{props.state.text}</p>
                 </div>
             </div>
         </div>

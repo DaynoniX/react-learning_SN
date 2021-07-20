@@ -1,3 +1,4 @@
+let renderWholeDOM;
 let state = {
     profilePage: {
         infoData: {
@@ -9,18 +10,22 @@ let state = {
         },
         posts: [
             {
+                id: 1,
                 name: 'Name 1',
                 text: 'Text 1'
             },
             {
+                id: 2,
                 name: 'Name 2',
                 text: 'Text 2'
             },
             {
+                id: 3,
                 name: 'Name 3',
                 text: 'Text 3'
             },
         ],
+        newPost: '',
     },
     dialogsPage: {
         dialogsList: [
@@ -36,18 +41,38 @@ let state = {
                 id: 1,
                 text: 'lorem',
                 img: 'avtar.png',
-                type: 1
+                type: true
             },
             {
                 id: 2,
                 text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, accusantium aspernatur commodi dignissimos distinctio dolorum ducimus ea eos fugit magni maxime nemo nesciunt optio perspiciatis praesentium repellat veritatis voluptate voluptatem?',
                 img: 'avtar.png',
-                type: 0
+                type: false
             },
         ]
     },
     layout: {}
 
 }
+export let addPost = () => {
+    let postRef = state.profilePage.posts;
+    postRef.push({
+        id: postRef.length + 1,
+        name: 'Name ' + (postRef.length + 1).toString(),
+        text: state.profilePage.newPost
+    });
+    state.profilePage.newPost = '';
+    renderWholeDOM(state);
+}
+export let typeText = (text) => {
+    state.profilePage.newPost = text;
+    renderWholeDOM(state);
+}
+
 
 export default state;
+
+export let subscribe = (observer) =>{
+    renderWholeDOM = observer;
+}
+

@@ -1,14 +1,13 @@
 import React from "react";
-
+import classnames from 'classnames/bind';
 import styles from './Message.module.scss';
 
-const Message = (props) =>{
-    let messageClass = '';
-    if (props.state.type > 0){
-        messageClass = styles.message + ' ' + styles.income;
-    } else {
-        messageClass = styles.message;
-    }
+const Message = (props) => {
+    let classes = classnames.bind(styles);
+    let messageClass = classes(
+        'message',
+        {'income': props.state.type}
+    );
 
     return (
         <div className={messageClass}>

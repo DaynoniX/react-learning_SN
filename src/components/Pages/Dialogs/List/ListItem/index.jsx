@@ -7,7 +7,7 @@ const ListItem = (props) => {
     let path = '/dialogs/' + props.id;
     return (
         <div className={styles.item }>
-            <NavLink to={path} >{props.name}</NavLink>
+            <NavLink to={path} activeClassName={styles.active}>{props.name}</NavLink>
         </div>
     )
 }

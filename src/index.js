@@ -1,19 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App';
-import reportWebVitals from './utils/reportWebVitals';
 import './styles/index.css';
 
-import state from './tmp_state/state';
+import state, {addPost, subscribe, typeText} from "./tmp_state/state";
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App state={state}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+let renderWholeDOM = (state) => {
+    ReactDOM.render(
+        <App state={state} addPost={addPost} typeText={typeText}/>,
+        document.getElementById('root')
+    );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+renderWholeDOM(state);
+subscribe(renderWholeDOM);
