@@ -12,8 +12,8 @@ import Home from "./Pages/Home";
 
 import '../styles/global.scss';
 
-
 const App = (props) => {
+
     return (
         <BrowserRouter>
             <div className="page">
@@ -23,11 +23,13 @@ const App = (props) => {
                     <Route path='/profile'
                            render={() => <Profile
                                state={props.state.profilePage}
-                               addPost={props.addPost}
-                               typeText={props.typeText}
+                               dispatch={props.dispatch}
                            />}/>
                     <Route path='/dialogs'
-                           render={() => <Dialogs state={props.state.dialogsPage}/>}/>
+                           render={() => <Dialogs
+                               state={props.state.dialogsPage}
+                               dispatch={props.dispatch}
+                           />}/>
                     <Route exact path='/'
                            render={() => <Home/>}/>
                     <Route path='/music'

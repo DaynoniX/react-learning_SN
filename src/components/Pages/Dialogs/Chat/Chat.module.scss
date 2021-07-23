@@ -1,7 +1,31 @@
 @import "../../../../styles/variables";
 
 .chat{
-  padding: 20px;
+  padding: 20px 0 0;
+}
+.messages{
+  padding: 0 20px;
   display: flex;
   flex-direction: column-reverse;
+
+}
+.input{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px 25px;
+  margin-top: 20px;
+  background: rgba($bg-accent, 0.5);
+  input{
+    width: 80%;
+    display: block;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    background: $bg-main;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: $txt-heading;
+  }
 }

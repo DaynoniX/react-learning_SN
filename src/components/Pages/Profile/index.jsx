@@ -11,7 +11,7 @@ const Profile = (props) => {
         <div>
             <div className={styles.wallpaper} />
             <Info data={props.state.infoData}/>
-            <NewPost addPost={props.addPost} state={props.state} typeText={props.typeText}/>
+            <NewPost  state={props.state.newPost} dispatch={props.dispatch}/>
             <Posts posts={props.state.posts}/>
         </div>
     );

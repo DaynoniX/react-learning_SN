@@ -1,16 +1,17 @@
 import React from 'react';
 import './styles/index.css';
 
-import state, {addPost, subscribe, typeText} from "./tmp_state/state";
+import store from "./tmp_state/state";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 
-let renderWholeDOM = (state) => {
+
+let renderWholeDOM = () => {
     ReactDOM.render(
-        <App state={state} addPost={addPost} typeText={typeText}/>,
+        <App state={store.getState()} dispatch={store.dispatch.bind(store)}/>,
         document.getElementById('root')
     );
 }
 
-renderWholeDOM(state);
-subscribe(renderWholeDOM);
+renderWholeDOM(store.getState());
+store.subscribe(renderWholeDOM);
