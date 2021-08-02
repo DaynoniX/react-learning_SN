@@ -11,14 +11,15 @@ import {
 
 const Chat = (props) => {
     let messageInput = React.createRef();
-    let messagesList = props.state.messages.map( item => <Message state={item} />);
+    let messagesList = props.messagesList.map( item => <Message state={item} />);
 
     let typeMessage = () =>{
         let text = messageInput.current.value;
-        props.dispatch(typeMessageAction(text))
+        props.onTypeMessage(text);
     }
     let addMessage = () =>{
-        props.dispatch(addMessageAction())
+        props.onAddMessage();
+        messageInput.current.focus();
     }
         return (
             <div className={styles.chat}>
@@ -26,7 +27,7 @@ const Chat = (props) => {
                     { messagesList }
                 </div>
                 <div className={styles.input}>
-                    <input type="text" ref={messageInput} onChange={typeMessage} value={props.state.newMessage}/>
+                    <input type="text" ref={messageInput} onChange={typeMessage} value={props.textareaValue}/>
                     <Button text="Send" onClick={addMessage}/>
                 </div>
             </div>

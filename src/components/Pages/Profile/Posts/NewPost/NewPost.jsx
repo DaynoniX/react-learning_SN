@@ -4,28 +4,26 @@ import Button from "../../../../UI/Button";
 
 import styles from './NewPost.module.scss';
 import '../../../../../styles/global.scss';
-import {addPostAction, typePostAction} from "../../../../../redux/profileReducer";
 
 const NewPost = (props) => {
 
     let textareaRef = React.createRef();
-    let addPost = () => {
+    let onAddPost = () => {
         let textareaText = textareaRef.current.value;
         textareaText !== '' ?
-            props.dispatch(addPostAction()) : alert('Please, fill text area before saving post!');
+            props.addPost() : alert('Please, fill text area before saving post!');
     }
-    let typePost = () => {
+    let onTypePost = () => {
         let textareaText = textareaRef.current.value;
-        props.dispatch(typePostAction(textareaText));
+        props.typePost(textareaText);
     }
-
     return (
         <div className={styles.newPost}>
             <h5>My posts</h5>
             <form action="#">
-                <textarea placeholder={'Start typing...'} ref={textareaRef} value={props.state}
-                          onChange={typePost}/>
-                <Button type={styles.btnDefault} text={'Add post'} onClick={addPost}/>
+                <textarea placeholder={'Start typing...'} ref={textareaRef} value={props.postText}
+                          onChange={onTypePost}/>
+                <Button type={styles.btnDefault} text={'Add post'} onClick={onAddPost}/>
             </form>
         </div>
     );

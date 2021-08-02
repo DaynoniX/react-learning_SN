@@ -1,5 +1,6 @@
 import React from 'react';
-import NewPost from "./Posts/NewPost";
+
+import NewPostContainer from "./Posts/NewPost/NewPostContainer";
 import Posts from "./Posts";
 import Info from "./Info";
 
@@ -10,9 +11,9 @@ const Profile = (props) => {
     return (
         <div>
             <div className={styles.wallpaper} />
-            <Info data={props.state.infoData}/>
-            <NewPost  state={props.state.newPost} dispatch={props.dispatch}/>
-            <Posts posts={props.state.posts}/>
+            <Info data={props.store.getState().profilePage.infoData}/>
+            <NewPostContainer store={props.store}/>
+            <Posts posts={props.store.getState().profilePage.posts}/>
         </div>
     );
 }
