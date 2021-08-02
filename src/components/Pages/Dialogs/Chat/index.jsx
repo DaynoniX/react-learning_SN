@@ -3,7 +3,10 @@ import Message from "./Message";
 
 import styles from "./Chat.module.scss";
 import Button from "../../../UI/Button";
-import {addMessageAction, typeMessageAction} from "../../../../tmp_state/dialogsReducer";
+import {
+    addMessageAction,
+    typeMessageAction
+} from "../../../../redux/dialogsReducer";
 
 
 const Chat = (props) => {

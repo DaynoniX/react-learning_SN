@@ -6,6 +6,7 @@
 .messages{
   padding: 0 20px;
   display: flex;
+  flex-direction: column;
 }
 .input{
   display: flex;

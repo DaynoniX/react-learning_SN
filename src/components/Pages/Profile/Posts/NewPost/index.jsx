@@ -4,7 +4,7 @@ import Button from "../../../../UI/Button";
 
 import styles from './NewPost.module.scss';
 import '../../../../../styles/global.scss';
-import {addPostAction, typePostAction} from "../../../../../tmp_state/profileReducer";
+import {addPostAction, typePostAction} from "../../../../../redux/profileReducer";
 
 const NewPost = (props) => {
 
