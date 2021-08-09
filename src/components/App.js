@@ -21,13 +21,9 @@ const App = (props) => {
                 <Sidebar/>
                 <div className="container bar">
                     <Route path='/profile'
-                           render={() => <Profile
-                               store={props.store}
-                           />}/>
+                           component={Profile}/>
                     <Route path='/dialogs'
-                           render={() => <Dialogs
-                               store={props.store}
-                           />}/>
+                           component={Dialogs}/>
                     <Route exact path='/'
                            render={() => <Home/>}/>
                     <Route path='/music'

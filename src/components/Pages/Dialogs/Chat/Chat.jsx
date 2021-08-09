@@ -3,22 +3,18 @@ import Message from "./Message";
 
 import styles from "./Chat.module.scss";
 import Button from "../../../UI/Button";
-import {
-    addMessageAction,
-    typeMessageAction
-} from "../../../../redux/dialogsReducer";
 
 
 const Chat = (props) => {
     let messageInput = React.createRef();
-    let messagesList = props.messagesList.map( item => <Message state={item} />);
+    let messagesList = props.messages.map( item => <Message state={item} />);
 
     let typeMessage = () =>{
         let text = messageInput.current.value;
-        props.onTypeMessage(text);
+        props.typeMessage(text);
     }
     let addMessage = () =>{
-        props.onAddMessage();
+        props.addMessage();
         messageInput.current.focus();
     }
         return (
