@@ -30,18 +30,22 @@ let initialState = {
 let dialogsReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_MESSAGE:
-            let messages = state.messages;
-            messages.push({
-                id: messages.length+1,
+           let createdMessage = {
+                id: state.messages.length+1,
                 text: state.newMessage,
                 img: 'avtar.png',
                 type: true
-            });
-            state.newMessage = '';
-            return state;
+            };
+            return {
+                ...state,
+                messages: [...state.messages, createdMessage],
+                newMessage: ''
+            };
         case TYPE_MESSAGE:
-            state.newMessage = action.text;
-            return state;
+            return {
+                ...state,
+                newMessage: action.text
+            };
         default: return state;
     }
 }

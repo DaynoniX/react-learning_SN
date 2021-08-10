@@ -30,19 +30,25 @@ let initialState = {
 };
 
 let profileReducer = (state = initialState, action) => {
+
     switch (action.type) {
         case ADD_POST:
-            let postRef = state.posts;
-            postRef.push({
-                id: postRef.length + 1,
-                name: 'Name ' + (postRef.length + 1).toString(),
+            let createdPost = {
+                id: state.posts.length + 1,
+                name: 'Name ' + (state.posts.length + 1).toString(),
                 text: state.newPost
-            });
-            state.newPost = '';
-            return state;
+            };
+            return {
+                ...state,
+                posts: [...state.posts, createdPost],
+                newPost: ''
+            }
         case TYPE_POST:
-            state.newPost = action.text;
-            return state;
+            return {
+                ...state,
+                newPost: action.text
+            };
+
         default: return state;
     }
 }

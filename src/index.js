@@ -7,14 +7,10 @@ import App from "./components/App";
 import {Provider} from "react-redux";
 
 
-let renderWholeDOM = () => {
-    ReactDOM.render(
-        <Provider store={store}>
-            <App />
-        </Provider>,
-        document.getElementById('root')
-    );
-}
+ReactDOM.render(
+    <Provider store={store}>
+        <App/>
+    </Provider>,
+    document.getElementById('root')
+);
 
-renderWholeDOM(store.getState());
-store.subscribe(renderWholeDOM);
