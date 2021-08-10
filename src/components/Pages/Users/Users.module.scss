@@ -1,0 +1,63 @@
+@import '../../../styles/variables';
+
+.usersList{
+  padding: 10px 15px 30px;
+}
+.user{
+  display: flex;
+  padding: 15px;
+  align-items: center;
+}
+.avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 15px;
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+.content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  padding: 15px;
+  background: $bg-accent;
+  border-radius: 15px;
+}
+.actions{
+  width: 200px;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.location{
+  text-align: right;
+}
+
+.name{
+  color: $txt-heading;
+  font-weight: 600;
+  font-size: 16px;
+}
+p{
+  font-size: 13px;
+}
+.city{
+  font-weight: 600;
+  font-size: 14px;
+  color: $txt-heading;
+}
+.country{
+  font-weight: 500;
+  font-size: 11px;
+  margin-top: 8px;
+}
+.btnArea{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

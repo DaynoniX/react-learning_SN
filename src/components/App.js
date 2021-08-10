@@ -9,8 +9,10 @@ import Settings from "./Pages/Settings";
 import News from "./Pages/News";
 import Music from "./Pages/Music";
 import Home from "./Pages/Home";
+import Users from "./Pages/Users/UsersContainer";
 
 import '../styles/global.scss';
+import UsersContainer from "./Pages/Users/UsersContainer";
 
 const App = (props) => {
 
@@ -26,6 +28,8 @@ const App = (props) => {
                            component={Dialogs}/>
                     <Route exact path='/'
                            render={() => <Home/>}/>
+                   <Route exact path='/users'
+                           render={() => <UsersContainer/>}/>
                     <Route path='/music'
                            render={() => <Music/>}/>
                     <Route path='/news'
